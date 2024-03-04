@@ -1,0 +1,29 @@
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    border: 1px solid black;
+}
+
+#main-header #title {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#main-header #title img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid #ffc404;
+}
+
+section{
+    font-size: 1.2rem;
+}
+
+section a{
+    text-decoration: none;
+}

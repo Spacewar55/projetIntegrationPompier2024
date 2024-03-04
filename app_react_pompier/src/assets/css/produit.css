@@ -1,0 +1,22 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+li {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    overflow: hidden;
+}
+
+img {
+    float: left;
+    margin-right: 10px;
+    max-width: 100px;
+    max-height: 100px;
+}

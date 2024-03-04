@@ -1,0 +1,14 @@
+#main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    border: 1px solid black;
+    background-color: green;
+}
+  
+#main-footer #title {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
