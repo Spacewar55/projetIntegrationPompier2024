@@ -9,10 +9,9 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-// TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
 
-export default function signIn() {
+export default function login() {
 
   return (
     <ThemeProvider theme={defaultTheme}>

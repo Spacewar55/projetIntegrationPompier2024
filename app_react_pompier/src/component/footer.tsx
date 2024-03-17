@@ -7,7 +7,7 @@ export default function Footer(){
                 <h4>Connecté en tant que :</h4>
             </div>
             <nav>
-                <a href="#">Se déconnecter</a>
+                <a href="/">Se déconnecter</a>
             </nav>
         </footer>
     );
