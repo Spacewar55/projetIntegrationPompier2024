@@ -1,22 +1,21 @@
-ul {
-    list-style-type: none;
-    padding: 0;
+
+.produit{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
-li {
-    width: 30%;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    overflow: hidden;
+.paperAjoutPanier{
+    margin-left: 70%;
 }
 
-img {
-    float: left;
-    margin-right: 10px;
-    max-width: 100px;
-    max-height: 100px;
+.produit .quantitePanier{
+    display: block ruby;
+    margin-bottom: 5%;
+}
+
+.produit .taillePanier{
+    display: block ruby;
+}
+
+.produit .cardActionProduit {
+    display: flex;
 }

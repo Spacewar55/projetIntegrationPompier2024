@@ -1,0 +1,28 @@
+.panier{
+    display: flex;
+}
+
+.panier .firstColonnePanier{
+    width: 40%;
+    margin-right: 10%;
+}
+
+.panier .quantitePanier{
+    display: flex;
+}
+
+.panier .taillePanier{
+    display: flex;
+}
+
+.cardProduit {
+    display: flex;
+}
+
+.panier img {
+    width: 40%;
+}
+
+.panier .cardActionProduit {
+    display: flex;
+}

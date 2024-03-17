@@ -2,13 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
+    padding: 0% 1%;
     border: 1px solid black;
-    background-color: green;
+    background-color: #c8c8c8;
 }
-  
-#main-footer #title {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+
+#main-footer a:visited{
+    text-decoration: none;
 }

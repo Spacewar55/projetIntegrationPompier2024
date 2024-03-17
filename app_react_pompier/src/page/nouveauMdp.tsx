@@ -1,59 +1,58 @@
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
-import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Container from '@mui/material/Container';
 
 // TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
 
-export default function newMDP() {
+export default function nouveauMDP() {
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Grid container component="main" sx={{ height: '50vh' }} justifyContent="center" pt={15}>
+      <Container component="main" maxWidth="xs">
         <CssBaseline />
-        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
-          <Box
-            sx={{
-              my: 8,
-              mx: 4,
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-            }}
-          >
-            <Typography component="h1" variant="h4">
-              Nouveau mot de passe
-            </Typography>
-            <Box component="form" noValidate sx={{ mt: 1 }}>
-              <TextField 
-                margin="normal" 
-                required fullWidth 
-                id="nouveaumotDePasse" 
-                label="Nouveau mot de passe" 
-                name="nouveaumotDePasse" 
-                type="password"
-              />
-              <TextField 
-                margin="normal" 
-                required 
-                fullWidth 
-                id="confirmationmotDePasse" 
-                label="Confirmer le nouveau mot de passe" 
-                name="confirmationmotDePasse" 
-                type="password"
-              />
-              <Button type="submit" href="/accueil" variant="contained" sx={{ mt: 3, mb: 2 }}>
-                Confirmer
-              </Button>
-            </Box>
+        <Box
+          sx={{
+            marginTop: 8,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
+          <Typography component="h1" variant="h5">
+            Nouveau mot de passe
+          </Typography>
+          <Box component="form" sx={{ mt: 1 }}>
+            <TextField
+              required
+              fullWidth
+              id="nouveauMdp"
+              label="Nouveau mot de passe"
+              name="nouveauMdp"
+              sx={{ mt: 3, mb: 2 }}
+            />
+            <TextField
+              required
+              fullWidth
+              id="confirmationnouveauMdp"
+              label="Confirmer votre nouveau mot de passe"
+              name="confirmationnouveauMdp"
+            />
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              sx={{ mt: 3, mb: 26 }}
+            >
+              Modifier
+            </Button>
           </Box>
-        </Grid>
-      </Grid>
+        </Box>
+      </Container>
     </ThemeProvider>
   );
 }
