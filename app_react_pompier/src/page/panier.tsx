@@ -5,14 +5,6 @@ import '../assets/css/panier.css';
 
 export default function Panier() {
 
-  const [quantite, setQuantite] = React.useState('');
-  const [taille, setTaille] = React.useState('');
-
-  const handleChange = (event: SelectChangeEvent) => {
-    setQuantite(event.target.value as string);
-    setTaille(event.target.value as string);
-  };
-
   return (
     <div className='panier'>
       <div className='firstColonnePanier'>

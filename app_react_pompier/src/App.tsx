@@ -14,21 +14,7 @@ import Commande from './page/commande';
 import Produit from './page/produit';
 import Panier from './page/panier';
 
-import { useLocation } from 'react-router-dom';
-
 function App() {
-  // const [header, _setHeader] = useState(<div/>);
-  // const [footer, _setFooter] = useState(<div/>);
-
-  // function isLoginPage(){
-  //   if (window.location.pathname !== "/") {
-  //     _setHeader(Header);
-  //     _setFooter(Footer);
-  //   }
-  // }
-  // useEffect(() => {
-  //   isLoginPage();
-  // }, [])
   return (
     <React.Fragment>
       <Header/>

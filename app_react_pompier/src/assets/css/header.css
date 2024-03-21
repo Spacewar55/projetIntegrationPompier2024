@@ -26,13 +26,8 @@
     width: 40%;
 }
 
-#main-header section a{
-    color: black;
-    margin-right: 10%;
-}
-
-#main-header section a:visited{
-    text-decoration: none;
+#main-header section button{
+    margin-right: 5%;
 }
 
 #main-header .panier{

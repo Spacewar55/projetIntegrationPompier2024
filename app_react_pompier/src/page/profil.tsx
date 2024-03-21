@@ -8,7 +8,6 @@ import Container from '@mui/material/Container';
 
 import '../assets/css/profil.css'
 
-// TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
 
 export default function profil() {
