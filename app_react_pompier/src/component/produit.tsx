@@ -4,14 +4,12 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
-
-const handleClick = () => {
-  window.location.href = '/produit';
-};
+import { useNavigate  } from 'react-router-dom';
 
 export default function Produit() {
+  const navigate = useNavigate();
   return (
-    <Card sx={{ m:3 }} className='cardProduit' onClick={handleClick}>
+    <Card sx={{ m:3 }} className='cardProduit' onClick={() => navigate('/produit')}>
       <CardActionArea className='cardActionProduit'>
         <CardMedia
           component="img"

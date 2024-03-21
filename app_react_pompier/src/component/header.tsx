@@ -2,30 +2,41 @@ import { Button } from '@mui/material';
 import '../assets/css/header.css';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 
-const handleClick = () => {
-    window.location.href = '/panier';
-};
+import { useNavigate, useLocation } from 'react-router-dom';
 
-export default function Header(){
+export default function Header() {
+    const navigate = useNavigate();
+    const location = useLocation();
+
     return (
-        <header id="main-header">
-            <div id="title">
-                <img src='../../logoPompierRDL.png'/>
-                <h2>Pompiers de Rivière-Du-Loup</h2>
-            </div>
-            <section>
-                <a href="/accueil">Accueil</a>
-                <a href="/profil">Profil</a>
-                <a href="/commandes">Commandes</a>
-            </section>
-            <div>
-                <Button
-                    color="primary"
-                    startIcon={<ShoppingBasketIcon />}
-                    onClick={handleClick}
-                >
-                </Button>
-            </div>
-        </header>
+        <>
+            {location.pathname !== "/" && (
+                <header id="main-header">
+                    <div id="title">
+                        <img src='../../logoPompierRDL.png' alt="Logo"/>
+                        <h2>Pompiers de Rivière-Du-Loup</h2>
+                    </div>
+                    <section>
+                        <Button color="inherit" onClick={() => navigate('/accueil')}>
+                            Accueil
+                        </Button>
+                        <Button color="inherit" onClick={() => navigate('/profil')}>
+                            Profil
+                        </Button>
+                        <Button color="inherit" onClick={() => navigate('/commandes')}>
+                            Commandes
+                        </Button>
+                    </section>
+                    <div>
+                        <Button
+                            color="primary"
+                            startIcon={<ShoppingBasketIcon />}
+                            onClick={() => navigate('/panier')}
+                        >
+                        </Button>
+                    </div>
+                </header>
+            )}
+        </>
     );
 }
