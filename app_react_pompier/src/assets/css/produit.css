@@ -19,3 +19,12 @@
 .produit .cardActionProduit {
     display: flex;
 }
+
+.produit .firstColonneProduit{
+    width: 40%;
+    margin-right: 30%;
+}
+
+.produit img {
+    width: 40%;
+}

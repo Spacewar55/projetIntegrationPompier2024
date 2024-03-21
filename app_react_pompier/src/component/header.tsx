@@ -1,5 +1,10 @@
+import { Button } from '@mui/material';
 import '../assets/css/header.css';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+
+const handleClick = () => {
+    window.location.href = '/panier';
+};
 
 export default function Header(){
     return (
@@ -13,7 +18,14 @@ export default function Header(){
                 <a href="/profil">Profil</a>
                 <a href="/commandes">Commandes</a>
             </section>
-            <ShoppingBasketIcon/>
+            <div>
+                <Button
+                    color="primary"
+                    startIcon={<ShoppingBasketIcon />}
+                    onClick={handleClick}
+                >
+                </Button>
+            </div>
         </header>
     );
 }

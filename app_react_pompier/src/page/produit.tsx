@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import { Button, Card, CardActions, CardContent, Typography } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 import { InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material';
 
 import '../assets/css/produit.css'
@@ -12,8 +11,10 @@ export default function DetailProduit() {
   const [quantite, setQuantite] = React.useState('');
   const [taille, setTaille] = React.useState('');
 
-  const handleChange = (event: SelectChangeEvent) => {
+  const handleChangeQuantite = (event: SelectChangeEvent) => {
     setQuantite(event.target.value as string);
+  };
+  const handleChangeTaille = (event: SelectChangeEvent) => {
     setTaille(event.target.value as string);
   };
 
@@ -42,7 +43,7 @@ export default function DetailProduit() {
               id="quantite"
               label="Quantité"
               value={quantite}
-              onChange={handleChange}>
+              onChange={handleChangeQuantite}>
                 <MenuItem value={1}>1</MenuItem>
                 <MenuItem value={2}>2</MenuItem>
                 <MenuItem value={3}>3</MenuItem>
@@ -57,7 +58,7 @@ export default function DetailProduit() {
               id="taille"
               label="Taille"
               value={taille}
-              onChange={handleChange}>
+              onChange={handleChangeTaille}>
                 <MenuItem value={"S"}>S</MenuItem>
                 <MenuItem value={"M"}>M</MenuItem>
                 <MenuItem value={"L"}>L</MenuItem>
@@ -66,8 +67,8 @@ export default function DetailProduit() {
                 <MenuItem value={"XXXL"}>XXXL</MenuItem>
             </Select>
           </div>
+          <Button variant="contained" className='btnAjouter'>Ajouter au panier</Button>
         </Box>
-        <Button variant="contained">Ajouter au panier</Button>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, Button, InputLabel, MenuItem, Select, SelectChangeEvent, Typography } from '@mui/material';
+import { Box, Button, SelectChangeEvent, Typography } from '@mui/material';
 import Produit from '../component/produit'
 import '../assets/css/panier.css';
 
@@ -31,8 +31,8 @@ export default function Panier() {
         >
           <Typography>Total :</Typography>
           <Typography>Nombre de point restant :</Typography>
-          <Button variant="contained" color='success'>Valider la commande</Button>
-          <Button variant="outlined" color='error'>Vider le panier</Button>
+          <Button variant="contained" color='success' className='btnValider'>Valider la commande</Button>
+          <Button variant="outlined" color='error' className='btnVider'>Vider le panier</Button>
         </Box>
       </div>
     </div>

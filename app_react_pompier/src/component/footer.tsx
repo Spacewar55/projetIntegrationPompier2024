@@ -6,6 +6,9 @@ export default function Footer(){
             <div id="title">
                 <h4>Connecté en tant que :</h4>
             </div>
+            <div>
+                <img src='../../logoTechniqueInfo.png'/>
+            </div>
             <nav>
                 <a href="/">Se déconnecter</a>
             </nav>
