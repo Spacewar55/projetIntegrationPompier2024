@@ -4,19 +4,7 @@
 
 .panier .firstColonnePanier{
     width: 40%;
-    margin-right: 10%;
-}
-
-.panier .quantitePanier{
-    display: flex;
-}
-
-.panier .taillePanier{
-    display: flex;
-}
-
-.cardProduit {
-    display: flex;
+    margin-right: 30%;
 }
 
 .panier img {
@@ -25,4 +13,9 @@
 
 .panier .cardActionProduit {
     display: flex;
+}
+
+.panier .btnValider{
+    margin-top: 10%;
+    margin-bottom: 10%;
 }

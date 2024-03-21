@@ -8,6 +8,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import '../assets/css/login.css';
 
 const defaultTheme = createTheme();
 
@@ -28,6 +29,9 @@ export default function login() {
             }}
           >
             <Typography component="h1" variant="h4">
+              <div className='logoLogin'>
+                <img src='../../question.png'/>
+              </div>
               Page de connexion
             </Typography>
             <Box component="form" sx={{ mt: 1 }}>
@@ -50,7 +54,7 @@ export default function login() {
               />
               <Grid container>
                 <Grid item xs>
-                  <Link href="/oubliMdp">
+                  <Link>
                     Mot de passe oublié?
                   </Link>
                 </Grid>

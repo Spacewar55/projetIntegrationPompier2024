@@ -3,11 +3,15 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import CardActionArea from '@mui/material/CardActionArea';
+
+const handleClick = () => {
+  window.location.href = '/produit';
+};
 
 export default function Produit() {
   return (
-    <Card sx={{ m:3 }} className='cardProduit'>
+    <Card sx={{ m:3 }} className='cardProduit' onClick={handleClick}>
       <CardActionArea className='cardActionProduit'>
         <CardMedia
           component="img"
