@@ -14,22 +14,24 @@ import Commande from './page/commande';
 import Produit from './page/produit';
 import Panier from './page/panier';
 
-function App() {
-  const [header, _setHeader] = useState(<div/>);
-  const [footer, _setFooter] = useState(<div/>);
+import { useLocation } from 'react-router-dom';
 
-  function isLoginPage(){
-    if (window.location.pathname !== "/") {
-      _setHeader(Header);
-      _setFooter(Footer);
-    }
-  }
-  useEffect(() => {
-    isLoginPage();
-  }, [])
+function App() {
+  // const [header, _setHeader] = useState(<div/>);
+  // const [footer, _setFooter] = useState(<div/>);
+
+  // function isLoginPage(){
+  //   if (window.location.pathname !== "/") {
+  //     _setHeader(Header);
+  //     _setFooter(Footer);
+  //   }
+  // }
+  // useEffect(() => {
+  //   isLoginPage();
+  // }, [])
   return (
     <React.Fragment>
-      {header}
+      <Header/>
       <Routes>
         <Route path='/' element={ <Login /> }></Route>
         <Route path='/nouveauMdp' element={ <NouveauMDP/> }></Route>
@@ -39,7 +41,7 @@ function App() {
         <Route path='/produit' element={ <Produit/> }></Route>
         <Route path='/panier' element={ <Panier/> }></Route>
       </Routes>
-      {footer}
+      <Footer/>
     </React.Fragment>
     
   );
